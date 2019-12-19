@@ -22,7 +22,7 @@ module.exports = {
   },
   plugins:[
     new hrmlWebpackPlugin({ // 创建一个在内存中生成 HTML 页面的插件
-      template:path.join(__dirname,'./src/index.html'),//指定模板页面，将来会根据指定的页面路径去生成内存中的页面
+      template:path.join(__dirname,'./index.html'),//指定模板页面，将来会根据指定的页面路径去生成内存中的页面
       filename:'index.html' // 指定生成的页面的名称
     }),
     new VueLoaderPlugin() // 创建VueLoaderPlugin方法
